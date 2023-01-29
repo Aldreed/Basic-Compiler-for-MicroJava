@@ -1,0 +1,465 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+
+
+import rs.ac.bg.etf.pp1.ast.*;
+
+
+parser code {:
+	
+	boolean errorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+    
+    public void report_info(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+    
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal String IDENT;
+terminal Boolean BOOLCONST;
+terminal Integer NUMCONST;
+terminal Character CHARCONST;
+
+terminal PROGRAM, LEFTBRACKET_CUR, RIGHTBRACKET_CUR;
+terminal CONST, ASSIGN, SEMICOLON;
+terminal COMMA;
+terminal LEFTBRACKET_SQ, RIGHTBRACKET_SQ;
+terminal CLASS;
+terminal RECORD;
+terminal LEFTBRACKET, RIGHTBRACKET;
+terminal IF, DO, WHILE, BREAK, CONTINUE, RETURN, READ, PRINT;
+terminal INC, DEC;
+terminal LOR;
+terminal LAND;
+terminal NEW;
+terminal COLON;
+terminal LEQ, LNEQ, LGT, LGTEQ, LLT, LLTEQ, PLUS, MINUS, MUL, DIV, MOD;
+terminal EXTENDS, VOID, ELSE, PERIOD;
+terminal SUPER, THIS, ENUM, GOTO;
+
+
+
+nonterminal DuDe, DeclList, DeclListPart, ClassDecl, RecordDecl;
+nonterminal ConstIdentDecls;
+nonterminal VarIdentDecls;
+nonterminal VarDeclList, MethodDeclList;
+nonterminal StatementList, Statement;
+nonterminal DesignatorStatement, Statements, SingleStatement;
+nonterminal Assignop, ActPars;
+nonterminal ActParsList;
+nonterminal Relop;
+nonterminal Addop;
+nonterminal Mulop;
+nonterminal DesignatorIdentList, DesignatorIdentListPart;
+nonterminal FormParsDeclList, Label, ConstructorDecl, FormPars;
+nonterminal ConstSingleDecl, ConstMulDecl, ConstMulDeclList;
+nonterminal FormParsSingle, FormParsMultiple, FormParsMultipleList;
+
+nonterminal OptArg, OptArgs, OptArgsList;
+
+nonterminal ExtendsType, vName, ExprStart, TermStart, ActParsStart;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, MethodTypeName, Designator, ConstDecl, ClassName, MStart, MStartVoid;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr, VarDecl, TermFactorList, ExprTermList, CondFact, CondFactList, CondTerm, ConditionTermList, Condition;
+
+nonterminal IfIni, ElseIni, OrCheck, BracketCheck, WhileCheck;
+
+nonterminal DesignatorAssignOp;
+
+nonterminal DoWhileStart;
+
+nonterminal MinusExprStart;
+
+precedence left ELSE;
+
+Program ::= (Program) PROGRAM ProgName:p DeclList LEFTBRACKET_CUR MethodDeclList RIGHTBRACKET_CUR
+			;
+
+ProgName ::= (ProgramName) IDENT:prName;
+			
+DeclList ::= (DeclarationList) DeclList DeclListPart
+				|
+				(NoDeclList)/* epsilon */
+				;
+			
+DeclListPart ::= (PartDeclListConst) ConstDecl
+					|
+					(PartDeclListVar) VarDecl
+					|
+					(PartDeclListClass) ClassDecl
+					|
+					(PartDeclListRecord) RecordDecl
+					;
+
+ConstSingleDecl ::= (ConstDeclSingleNUM) Type:typeConst IDENT:constName ASSIGN NUMCONST:var 
+					|
+					(ConstDeclSingleCHAR) Type:typeConst IDENT:constName ASSIGN CHARCONST:var 
+					|
+					(ConstDeclSingleBOOL) Type:typeConst IDENT:constName ASSIGN BOOLCONST:var
+					;	
+
+ConstDecl ::= (ConstDeclMul) CONST ConstSingleDecl ConstIdentDecls SEMICOLON
+				;
+
+			
+
+ConstIdentDecls ::= (ConstIdentDecalsNumConst) ConstIdentDecls COMMA IDENT ASSIGN NUMCONST 
+					|
+					(ConstIdentDecalsCharConst) ConstIdentDecls COMMA IDENT ASSIGN CHARCONST 
+					|
+					(ConstIdentDecalsBoolConst) ConstIdentDecls COMMA IDENT ASSIGN BOOLCONST 
+					|
+					(NoConstIdenDecals)
+					/* epsilon */
+					|
+					error SEMICOLON:l
+					{: parser.report_error("CONST Izvrsen oporavak do , u liniji "+ (lleft+1),null); :}
+					;
+
+VarDecl ::= (VariableDecl) vName VarIdentDecls SEMICOLON
+			|
+			error SEMICOLON:l
+			{: parser.report_error("Izvrsen oporavak do ; u liniji "+ lleft,null); :}
+			|
+			error COMMA:l
+			{: parser.report_error("Izvrsen oporavak do , u liniji "+ lleft,null); :}
+			;
+
+vName ::= (VNameAct) Type:varType IDENT:varName
+			|
+			(VNameArr) Type:varType IDENT:varName LEFTBRACKET_SQ RIGHTBRACKET_SQ;
+
+VarIdentDecls ::= 	(VarIdentDeclsVar) VarIdentDecls COMMA IDENT:varName 
+					|
+					(VarIdentDeclsArr) VarIdentDecls COMMA IDENT:varName LEFTBRACKET_SQ RIGHTBRACKET_SQ
+					|
+					(NoVarIdentDecls)/* epsilon */
+					;
+					
+ClassDecl ::= 	(ClassDeclaration) ClassName LEFTBRACKET_CUR VarDeclList RIGHTBRACKET_CUR
+				|
+				(ClassDeclMethod) ClassName LEFTBRACKET_CUR VarDeclList LEFTBRACKET_CUR MethodDeclList RIGHTBRACKET_CUR RIGHTBRACKET_CUR
+				|
+				(ClassDeclMethodConstr) ClassName LEFTBRACKET_CUR VarDeclList LEFTBRACKET_CUR ConstructorDecl MethodDeclList RIGHTBRACKET_CUR RIGHTBRACKET_CUR
+				|
+				(ClassDeclExtends) ClassName ExtendsType LEFTBRACKET_CUR VarDeclList RIGHTBRACKET_CUR
+				|
+				(ClassDeclExtendsMethod) ClassName ExtendsType LEFTBRACKET_CUR VarDeclList LEFTBRACKET_CUR MethodDeclList RIGHTBRACKET_CUR RIGHTBRACKET_CUR
+				|
+				(ClassDeclExtendsMethodConstr) ClassName ExtendsType LEFTBRACKET_CUR VarDeclList LEFTBRACKET_CUR ConstructorDecl MethodDeclList RIGHTBRACKET_CUR RIGHTBRACKET_CUR
+				; 
+
+
+ClassName ::= (ClassName) CLASS IDENT:cName;
+
+ExtendsType ::= (ExtendsType) EXTENDS Type;
+
+VarDeclList ::= (VariableDeclList)  VarDeclList VarDecl /* TODO ISPRAVI ASOCIJATIVNOST */
+				|
+				(NoVarDeclList)
+				/* epsilon */
+				;
+
+MethodDeclList ::= 	(MethodDeclarationList) MethodDecl MethodDeclList /* TODO ISPRAVI ASOCIJATIVNOST */
+					|
+					(NoMethodDeclList)
+					/* epsilon */
+					;
+
+RecordDecl ::=	(RecordDecl) RECORD IDENT LEFTBRACKET_CUR VarDeclList RIGHTBRACKET_CUR
+				;
+
+ConstructorDecl ::= (ConstructorDecl) IDENT:constructorName LEFTBRACKET RIGHTBRACKET VarDeclList LEFTBRACKET_CUR StatementList RIGHTBRACKET_CUR
+					;
+					
+StatementList ::= (StatementListClass) StatementList Statement 
+					|
+					(NoStatementList)
+					/* epsilon */
+					;
+					
+
+MethodDecl ::= (MethodDeclNoParams) MStart LEFTBRACKET OptArgs RIGHTBRACKET VarDeclList LEFTBRACKET_CUR StatementList RIGHTBRACKET_CUR
+				|
+				(MethodDeclVoidNoParams) MStartVoid LEFTBRACKET OptArgs RIGHTBRACKET VarDeclList LEFTBRACKET_CUR StatementList RIGHTBRACKET_CUR
+				|
+				(MethodDeclParams) MStart LEFTBRACKET FormParsMultiple OptArgs RIGHTBRACKET VarDeclList LEFTBRACKET_CUR StatementList RIGHTBRACKET_CUR
+				|
+				(MethodDeclVoidParams) MStartVoid LEFTBRACKET FormParsMultiple OptArgs RIGHTBRACKET VarDeclList LEFTBRACKET_CUR StatementList RIGHTBRACKET_CUR
+				;
+
+MStart ::= (MStart) Type IDENT:methodName;
+
+MStartVoid ::= (MStartVoid) VOID IDENT:methodName;
+
+FormPars ::= (SingleFormPars) LEFTBRACKET FormParsSingle FormParsMultiple OptArgs RIGHTBRACKET
+				;
+				
+
+FormParsSingle ::= (FormParsSingleVAR) Type IDENT:fName 
+					|
+					(FormParsSingleARR) Type IDENT:fName LEFTBRACKET_SQ RIGHTBRACKET_SQ
+					;
+
+FormParsMultiple ::= (FormParsMultipleParams) FormParsMultiple COMMA FormParsSingle
+						|
+						(NoFormParsMultiple) FormParsSingle
+						|
+						error:l
+						{: parser.report_error("FORM PARS Greska u deklarisanju formalnog parametra na liniji: "+ lleft,null); :} 
+						;
+
+
+OptArgs ::= (OptArgsExists) OptArgsList
+			|
+			(OptArgsExistsCOMMA) COMMA OptArgsList
+			|
+			(NoOptArg)/* epsilon */
+			;
+
+
+OptArgsList ::= (OptArgsMultiple) OptArgsList COMMA OptArg
+				|
+				(SingleOptArg) OptArg
+				;
+				
+OptArg ::= (OptArgNUMCONST) Type IDENT:optArgName ASSIGN NUMCONST
+			|
+			(OptArgCHARCONST) Type IDENT:optArgName ASSIGN CHARCONST
+			|
+			(OptArgBOOLCONST) Type IDENT:optArgName ASSIGN BOOLCONST
+			;
+
+Type ::= (Type) IDENT:typeName
+			;
+
+Statement ::= (SingleStatementClass) SingleStatement
+				|
+				(StatementsClass) Statements
+				;
+
+DoWhileStart ::= (DoWhileStart) DO;
+
+IfIni ::= (IfIni) IF;
+
+ElseIni ::= (ElseIni) ELSE;
+
+WhileCheck ::= (WhileCheck) WHILE;
+
+SingleStatement ::=	(DesignatorSingleStatement) DesignatorStatement 
+					|
+					(IfSingleStatement) IfIni LEFTBRACKET Condition Statement
+					|
+					(IfElseSingleStatement) IfIni LEFTBRACKET Condition Statement ElseIni Statement /* PROBLEMS */
+					|
+					(DoWhileSingleStatement) DoWhileStart Statement WhileCheck LEFTBRACKET Condition SEMICOLON
+					|
+					(BreakSingleStatement) BREAK SEMICOLON
+					|
+					(ContinueSingleStatement) CONTINUE SEMICOLON
+					|
+					(ReturnSingleStatement) RETURN SEMICOLON
+					|
+					(ReturnVarSingleStatement) RETURN Expr SEMICOLON
+					|
+					(ReadSingleStatement) READ LEFTBRACKET Designator RIGHTBRACKET SEMICOLON
+					|
+					(PrintSingleStatement) PRINT LEFTBRACKET Expr RIGHTBRACKET SEMICOLON
+					|
+					(PrintArgsSingleStatement) PRINT LEFTBRACKET Expr COMMA NUMCONST RIGHTBRACKET SEMICOLON
+					;
+
+Statements ::= (StatementsActual) LEFTBRACKET_CUR StatementList RIGHTBRACKET_CUR
+				;
+
+DesignatorStatement ::= (DesignatorStatementAssignop) DesignatorAssignOp
+						|
+						(DesignatorStatementFunct) Designator LEFTBRACKET RIGHTBRACKET SEMICOLON
+						|
+						(DesignatorStatementSuperCal) SUPER LEFTBRACKET RIGHTBRACKET SEMICOLON
+						|
+						(DesignatorStatementSuperCalActPars) SUPER LEFTBRACKET ActPars RIGHTBRACKET SEMICOLON
+						|
+						(DesignatorStatementFunctActPars) Designator LEFTBRACKET ActPars RIGHTBRACKET SEMICOLON
+						|
+						(DesignatorStatementInc) Designator INC SEMICOLON
+						|
+						(DesignatorStatementDec) Designator DEC SEMICOLON
+						;
+
+DesignatorAssignOp ::= (AssignOpDesignator) Designator Assignop Expr SEMICOLON
+					|
+					error SEMICOLON:l
+					{: parser.report_error("ASSIGN Izvrsen oporavak do ; u liniji "+ lleft,null); :}
+					;
+ActParsStart ::= (ActParsStart)Expr;					
+					
+ActPars ::=  (ActParsSingle) ActParsStart
+				|
+				(ActParsMultiple) ActParsStart ActParsList
+				;
+
+ActParsList ::=	(ActualParsList) ActParsList COMMA Expr
+				|
+				(NoActParsList)COMMA Expr
+				;
+
+OrCheck ::= (OrCheck) LOR;
+BracketCheck ::= (BracketCheck) RIGHTBRACKET;
+
+Condition ::=	(ConditionSingle) CondTerm BracketCheck
+				|
+				(ConditionMultiple) CondTerm OrCheck ConditionTermList BracketCheck
+				|
+				(ConditionError) error RIGHTBRACKET:l
+				{: parser.report_error("IF Izvrsen oporavak do ) u liniji "+ lleft,null); :}
+				;
+
+
+
+ConditionTermList ::= (ConditionTermListClass) ConditionTermList OrCheck CondTerm
+						|
+						(NoConditionTermList) CondTerm
+						;
+
+
+CondTerm ::= (CondTermSingle) CondFact 
+			|
+			(CondTermMultiple) CondFactList LAND CondFact
+			;
+
+CondFactList ::= (CondFactListClass) CondFactList LAND CondFact
+				|
+				(NoCondFactList) CondFact
+				;
+
+CondFact ::= (ConditionFact) Expr
+			|
+			(CondFactRelop) Expr Relop Expr
+			;
+
+ExprStart ::= (ExprStart) Term;
+
+MinusExprStart ::= (MinusExprStart) MINUS ExprStart;
+
+Expr ::= (ExpressionSingle) ExprStart
+			|
+			(ExpressionMultiple) ExprStart Addop ExprTermList
+			|
+			(MinusExpr) MINUS ExprStart
+			|
+			(MinusExprMultiple) MinusExprStart Addop ExprTermList
+			;
+
+ExprTermList ::= (ExprTermListClass) ExprTermList Addop Term
+					|
+					(NoExprTermList) Term
+					;
+TermStart ::= (TermStart) Factor;
+
+Term ::= (TermSingle) TermStart 
+		|
+		(TermMultiple) TermStart Mulop TermFactorList
+			;
+
+TermFactorList ::= (TermFactorListClass) TermFactorList Mulop Factor
+					|
+					(NoTermFactorList) Factor
+					;
+
+Factor ::= (FactorClass) Designator
+			|
+			(FactorFunc) Designator LEFTBRACKET RIGHTBRACKET
+			|
+			(FactorFuncActPars) Designator LEFTBRACKET ActPars RIGHTBRACKET
+			|
+			(FactorNumConst) NUMCONST
+			|
+			(FactorCharConst) CHARCONST
+			|
+			(FactorBoolConst) BOOLCONST
+			|
+			(FactorNew) NEW Type
+			|
+			(FactorNewArr) NEW Type LEFTBRACKET_SQ Expr RIGHTBRACKET_SQ
+			|
+			(FactorBracketsExpr) LEFTBRACKET Expr RIGHTBRACKET
+			;
+			
+Designator ::= (DesignatorIdent) IDENT:dName
+				|
+				(DesignatorThis) THIS
+				|
+				(DesignatorDot)Designator PERIOD IDENT:dotName
+				|
+				(DesignatorArr)Designator LEFTBRACKET_SQ Expr RIGHTBRACKET_SQ
+				;				
+							
+Label ::= (Label) IDENT
+			;
+
+Assignop ::= (Assignop) ASSIGN
+				;
+
+Relop ::= (RelopLEQ) LEQ
+			|
+			(RelopLNEQ) LNEQ
+			|
+			(RelopLGT) LGT
+			|
+			(RelopLGTEQ) LGTEQ
+			|
+			(RelopLLT) LLT
+			|
+			(RelopLLTEQ) LLTEQ
+			;
+
+Addop ::= (AddopPLUS) PLUS
+		|
+		(AddopMINUS) MINUS
+			;
+
+Mulop ::= (MulopMUL) MUL
+			|
+			(MulopDIV) DIV
+			|
+			(MulopMOD) MOD
+			;

@@ -1,0 +1,26 @@
+program test302
+
+//const int jedan = 1, dva = true;
+//const bool tri = 1 , d = true;
+
+const int jedan  = 1, dva = 2;
+
+int i;
+bool ibool;
+
+int niz2;
+
+int niz[];
+int a;
+
+
+{
+	
+	
+	void main()
+	{
+		
+	if(false && false && false || false || false )print(1);
+	
+	}
+}

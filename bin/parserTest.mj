@@ -1,0 +1,58 @@
+program MJProgram
+//const bool t = false;
+//const int d = 3;
+//const char o = 'c';
+//char d, dy[], y;
+//bool t;
+
+//class SmallClass{}
+//class d{}
+//class Predmet extends SmallClass { {
+//Predmet(){}
+//int d(){}
+//}}
+const int jedan = 1;
+int niz[];
+{
+	int sum(int z = 1, int d = 2)
+	{
+		return z + d;
+	}
+	
+
+	int inkrement(int a, int inc = 1) 
+		int pom; 
+	{
+		if(inc == jedan) pom = 1;
+		else if(inc == 2) pom = a;
+
+		return sum(a,pom);
+	}
+	
+	void main() int o1[], d1, y1[], k1; {
+		print(sum());
+		//a.b.c.d[2].e = t2;
+	 	//d1 = *;
+	 	niz = new int[3];
+	 }
+	 
+	 //int test(int fPar, int[] p, bool t = true, char c = 'd' , int y = 1){
+	 	//return 1;
+	 //} 
+	// int tom() int o1;{
+	 	
+	 	//do{
+	 	//break;
+	 	//continue;
+	 	//}while(dy != null);
+	 	
+	 	
+	 	//test(o1*1, 'd', 2);
+	 	
+	 	//read(4);
+	 	//read(dy[3]);
+	 	//read(o1);
+	 	
+	 	//return 4*4 + 5*5+3;
+	 //}
+}

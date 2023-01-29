@@ -1,0 +1,1932 @@
+INFO  17:20:41,124 - Compiling source file: D:\Fax\PP\Materijali\Projekat\pp1lab.templateAST\workspace\MJCompiler\test\functAsFact.mj
+INFO  17:20:41,172 - #6 program
+INFO  17:20:41,172 - #2 test302
+INFO  17:20:41,172 - #9 const
+INFO  17:20:41,173 - #2 int
+INFO  17:20:41,173 - #2 jedan
+INFO  17:20:41,173 - #10 =
+INFO  17:20:41,173 - #4 1
+INFO  17:20:41,173 - #12 ,
+INFO  17:20:41,174 - #2 dva
+INFO  17:20:41,174 - #10 =
+INFO  17:20:41,174 - #4 2
+INFO  17:20:41,174 - #11 ;
+INFO  17:20:41,174 - #2 int
+INFO  17:20:41,175 - #2 i
+INFO  17:20:41,175 - #11 ;
+INFO  17:20:41,175 - #2 bool
+INFO  17:20:41,176 - #2 ibool
+INFO  17:20:41,176 - #11 ;
+INFO  17:20:41,176 - #2 int
+INFO  17:20:41,176 - #2 niz2
+INFO  17:20:41,176 - #11 ;
+INFO  17:20:41,178 - #2 int
+INFO  17:20:41,178 - #2 niz
+INFO  17:20:41,178 - #13 [
+INFO  17:20:41,178 - #14 ]
+INFO  17:20:41,178 - #11 ;
+INFO  17:20:41,178 - #2 int
+INFO  17:20:41,178 - #2 a
+INFO  17:20:41,178 - #11 ;
+INFO  17:20:41,178 - #2 int
+INFO  17:20:41,178 - #41 *
+INFO  17:20:41,178 - #2 er
+INFO  17:20:41,178 - #12 ,
+INFO  17:20:41,178 - #2 b
+INFO  17:20:41,180 - #11 ;
+INFO  17:20:41,180 - #7 {
+INFO  17:20:41,180 - #2 int
+INFO  17:20:41,180 - #2 sum
+INFO  17:20:41,181 - #17 (
+INFO  17:20:41,181 - #2 int
+INFO  17:20:41,181 - #2 z
+INFO  17:20:41,181 - #10 =
+INFO  17:20:41,181 - #4 1
+INFO  17:20:41,181 - #12 ,
+INFO  17:20:41,181 - #2 int
+INFO  17:20:41,181 - #2 d
+INFO  17:20:41,181 - #10 =
+INFO  17:20:41,181 - #4 2
+INFO  17:20:41,181 - #18 )
+INFO  17:20:41,181 - #7 {
+INFO  17:20:41,182 - #24 return
+INFO  17:20:41,182 - #2 z
+INFO  17:20:41,182 - #39 +
+INFO  17:20:41,183 - #2 d
+INFO  17:20:41,184 - #11 ;
+INFO  17:20:41,184 - #8 }
+INFO  17:20:41,184 - #2 bool
+INFO  17:20:41,186 - #2 verify
+INFO  17:20:41,186 - #17 (
+INFO  17:20:41,186 - #18 )
+INFO  17:20:41,186 - #7 {
+INFO  17:20:41,186 - #26 print
+INFO  17:20:41,186 - #17 (
+INFO  17:20:41,186 - #5 v
+INFO  17:20:41,186 - #18 )
+INFO  17:20:41,186 - #11 ;
+INFO  17:20:41,186 - #24 return
+INFO  17:20:41,186 - #3 false
+INFO  17:20:41,186 - #11 ;
+INFO  17:20:41,186 - #8 }
+INFO  17:20:41,186 - #2 int
+INFO  17:20:41,186 - #2 inkrement
+INFO  17:20:41,186 - #17 (
+INFO  17:20:41,186 - #2 int
+INFO  17:20:41,188 - #2 a
+INFO  17:20:41,188 - #12 ,
+INFO  17:20:41,188 - #2 int
+INFO  17:20:41,188 - #2 inc
+INFO  17:20:41,188 - #10 =
+INFO  17:20:41,188 - #4 1
+INFO  17:20:41,188 - #18 )
+INFO  17:20:41,188 - #2 int
+INFO  17:20:41,188 - #2 pom
+INFO  17:20:41,188 - #11 ;
+INFO  17:20:41,188 - #7 {
+INFO  17:20:41,188 - #19 if
+INFO  17:20:41,188 - #17 (
+INFO  17:20:41,189 - #2 inc
+INFO  17:20:41,189 - #33 ==
+INFO  17:20:41,189 - #2 jedan
+INFO  17:20:41,189 - #18 )
+INFO  17:20:41,189 - #2 pom
+INFO  17:20:41,191 - #10 =
+INFO  17:20:41,191 - #4 1
+INFO  17:20:41,191 - #11 ;
+INFO  17:20:41,191 - #46 else
+INFO  17:20:41,192 - #19 if
+INFO  17:20:41,192 - #17 (
+INFO  17:20:41,192 - #2 inc
+INFO  17:20:41,192 - #33 ==
+INFO  17:20:41,192 - #4 2
+INFO  17:20:41,192 - #18 )
+INFO  17:20:41,192 - #2 pom
+INFO  17:20:41,192 - #10 =
+INFO  17:20:41,192 - #2 a
+INFO  17:20:41,192 - #11 ;
+INFO  17:20:41,192 - #24 return
+INFO  17:20:41,192 - #2 sum
+INFO  17:20:41,192 - #17 (
+INFO  17:20:41,192 - #2 a
+INFO  17:20:41,192 - #12 ,
+INFO  17:20:41,193 - #2 pom
+INFO  17:20:41,193 - #18 )
+INFO  17:20:41,193 - #11 ;
+INFO  17:20:41,193 - #8 }
+INFO  17:20:41,193 - #2 bool
+INFO  17:20:41,195 - #2 functBool
+INFO  17:20:41,195 - #17 (
+INFO  17:20:41,195 - #2 int
+INFO  17:20:41,195 - #2 i
+INFO  17:20:41,195 - #12 ,
+INFO  17:20:41,195 - #2 bool
+INFO  17:20:41,195 - #2 t
+INFO  17:20:41,195 - #10 =
+INFO  17:20:41,195 - #3 true
+INFO  17:20:41,195 - #18 )
+INFO  17:20:41,195 - #7 {
+INFO  17:20:41,195 - #19 if
+INFO  17:20:41,195 - #17 (
+INFO  17:20:41,195 - #2 i
+INFO  17:20:41,195 - #33 ==
+INFO  17:20:41,195 - #4 1
+INFO  17:20:41,195 - #18 )
+INFO  17:20:41,195 - #7 {
+INFO  17:20:41,195 - #24 return
+INFO  17:20:41,195 - #3 true
+INFO  17:20:41,195 - #11 ;
+INFO  17:20:41,195 - #8 }
+INFO  17:20:41,195 - #46 else
+INFO  17:20:41,195 - #7 {
+INFO  17:20:41,195 - #24 return
+INFO  17:20:41,195 - #2 t
+INFO  17:20:41,195 - #11 ;
+INFO  17:20:41,195 - #8 }
+INFO  17:20:41,195 - #8 }
+INFO  17:20:41,195 - #2 int
+INFO  17:20:41,195 - #2 add2
+INFO  17:20:41,195 - #17 (
+INFO  17:20:41,196 - #2 int
+INFO  17:20:41,196 - #2 i
+INFO  17:20:41,196 - #12 ,
+INFO  17:20:41,196 - #2 int
+INFO  17:20:41,196 - #2 d
+INFO  17:20:41,196 - #12 ,
+INFO  17:20:41,196 - #2 int
+INFO  17:20:41,196 - #2 k
+INFO  17:20:41,196 - #10 =
+INFO  17:20:41,196 - #4 2
+INFO  17:20:41,196 - #18 )
+INFO  17:20:41,196 - #7 {
+INFO  17:20:41,196 - #19 if
+INFO  17:20:41,196 - #17 (
+INFO  17:20:41,196 - #2 i
+INFO  17:20:41,196 - #35 >
+INFO  17:20:41,196 - #4 0
+INFO  17:20:41,197 - #18 )
+INFO  17:20:41,197 - #7 {
+INFO  17:20:41,197 - #24 return
+INFO  17:20:41,197 - #2 k
+INFO  17:20:41,197 - #39 +
+INFO  17:20:41,197 - #2 i
+INFO  17:20:41,197 - #11 ;
+INFO  17:20:41,197 - #8 }
+INFO  17:20:41,197 - #46 else
+INFO  17:20:41,197 - #7 {
+INFO  17:20:41,197 - #24 return
+INFO  17:20:41,197 - #2 k
+INFO  17:20:41,197 - #39 +
+INFO  17:20:41,197 - #2 d
+INFO  17:20:41,197 - #11 ;
+INFO  17:20:41,197 - #8 }
+INFO  17:20:41,198 - #8 }
+INFO  17:20:41,198 - #2 int
+INFO  17:20:41,198 - #2 temp3
+INFO  17:20:41,198 - #17 (
+INFO  17:20:41,198 - #2 int
+INFO  17:20:41,198 - #2 i
+INFO  17:20:41,198 - #41 *
+INFO  17:20:41,198 - #12 ,
+INFO  17:20:41,198 - #2 int
+INFO  17:20:41,198 - #2 d
+INFO  17:20:41,199 - #18 )
+INFO  17:20:41,200 - #7 {
+INFO  17:20:41,200 - #24 return
+INFO  17:20:41,200 - #4 1
+INFO  17:20:41,200 - #11 ;
+INFO  17:20:41,200 - #8 }
+INFO  17:20:41,200 - #45 void
+INFO  17:20:41,200 - #2 main
+INFO  17:20:41,200 - #17 (
+INFO  17:20:41,201 - #18 )
+INFO  17:20:41,201 - #7 {
+INFO  17:20:41,201 - #19 if
+INFO  17:20:41,201 - #17 (
+INFO  17:20:41,201 - #2 functBool
+INFO  17:20:41,201 - #17 (
+INFO  17:20:41,201 - #2 jedan
+INFO  17:20:41,201 - #18 )
+INFO  17:20:41,201 - #18 )
+INFO  17:20:41,201 - #7 {
+INFO  17:20:41,201 - #26 print
+INFO  17:20:41,201 - #17 (
+INFO  17:20:41,201 - #5 p
+INFO  17:20:41,201 - #18 )
+INFO  17:20:41,201 - #11 ;
+INFO  17:20:41,201 - #26 print
+INFO  17:20:41,201 - #17 (
+INFO  17:20:41,201 - #5 1
+INFO  17:20:41,201 - #18 )
+INFO  17:20:41,202 - #11 ;
+INFO  17:20:41,202 - #26 print
+INFO  17:20:41,202 - #17 (
+INFO  17:20:41,202 - #2 eol
+INFO  17:20:41,202 - #18 )
+INFO  17:20:41,202 - #11 ;
+INFO  17:20:41,202 - #8 }
+INFO  17:20:41,202 - #19 if
+INFO  17:20:41,202 - #17 (
+INFO  17:20:41,202 - #2 functBool
+INFO  17:20:41,202 - #17 (
+INFO  17:20:41,202 - #2 dva
+INFO  17:20:41,202 - #18 )
+INFO  17:20:41,202 - #33 ==
+INFO  17:20:41,202 - #3 true
+INFO  17:20:41,202 - #18 )
+INFO  17:20:41,202 - #7 {
+INFO  17:20:41,202 - #26 print
+INFO  17:20:41,202 - #17 (
+INFO  17:20:41,202 - #5 p
+INFO  17:20:41,202 - #18 )
+INFO  17:20:41,202 - #11 ;
+INFO  17:20:41,202 - #26 print
+INFO  17:20:41,202 - #17 (
+INFO  17:20:41,202 - #5 2
+INFO  17:20:41,204 - #18 )
+INFO  17:20:41,204 - #11 ;
+INFO  17:20:41,204 - #26 print
+INFO  17:20:41,204 - #17 (
+INFO  17:20:41,204 - #2 eol
+INFO  17:20:41,204 - #18 )
+INFO  17:20:41,204 - #11 ;
+INFO  17:20:41,210 - #8 }
+INFO  17:20:41,210 - #19 if
+INFO  17:20:41,210 - #17 (
+INFO  17:20:41,210 - #2 functBool
+INFO  17:20:41,210 - #17 (
+INFO  17:20:41,210 - #2 dva
+INFO  17:20:41,210 - #12 ,
+INFO  17:20:41,210 - #2 functBool
+INFO  17:20:41,210 - #17 (
+INFO  17:20:41,210 - #4 1
+INFO  17:20:41,210 - #18 )
+INFO  17:20:41,210 - #18 )
+INFO  17:20:41,211 - #33 ==
+INFO  17:20:41,211 - #3 true
+INFO  17:20:41,211 - #18 )
+INFO  17:20:41,211 - #7 {
+INFO  17:20:41,211 - #26 print
+INFO  17:20:41,211 - #17 (
+INFO  17:20:41,211 - #5 p
+INFO  17:20:41,211 - #18 )
+INFO  17:20:41,211 - #11 ;
+INFO  17:20:41,211 - #26 print
+INFO  17:20:41,211 - #17 (
+INFO  17:20:41,211 - #5 3
+INFO  17:20:41,211 - #18 )
+INFO  17:20:41,211 - #11 ;
+INFO  17:20:41,211 - #26 print
+INFO  17:20:41,211 - #17 (
+INFO  17:20:41,211 - #2 eol
+INFO  17:20:41,211 - #18 )
+INFO  17:20:41,211 - #11 ;
+INFO  17:20:41,212 - #8 }
+INFO  17:20:41,212 - #19 if
+INFO  17:20:41,212 - #17 (
+INFO  17:20:41,212 - #2 add2
+INFO  17:20:41,212 - #17 (
+INFO  17:20:41,212 - #4 1
+INFO  17:20:41,212 - #12 ,
+INFO  17:20:41,212 - #4 2
+INFO  17:20:41,212 - #18 )
+INFO  17:20:41,212 - #35 >
+INFO  17:20:41,212 - #4 3
+INFO  17:20:41,212 - #18 )
+INFO  17:20:41,212 - #7 {
+INFO  17:20:41,212 - #26 print
+INFO  17:20:41,212 - #17 (
+INFO  17:20:41,212 - #5 p
+INFO  17:20:41,212 - #18 )
+INFO  17:20:41,212 - #11 ;
+INFO  17:20:41,212 - #26 print
+INFO  17:20:41,212 - #17 (
+INFO  17:20:41,212 - #5 4
+INFO  17:20:41,212 - #18 )
+INFO  17:20:41,212 - #11 ;
+INFO  17:20:41,212 - #26 print
+INFO  17:20:41,213 - #17 (
+INFO  17:20:41,213 - #2 eol
+INFO  17:20:41,213 - #18 )
+INFO  17:20:41,213 - #11 ;
+INFO  17:20:41,213 - #8 }
+INFO  17:20:41,213 - #26 print
+INFO  17:20:41,213 - #17 (
+INFO  17:20:41,213 - #5 d
+INFO  17:20:41,213 - #12 ,
+INFO  17:20:41,213 - #4 2
+INFO  17:20:41,213 - #18 )
+INFO  17:20:41,213 - #11 ;
+INFO  17:20:41,213 - #2 i
+INFO  17:20:41,213 - #10 =
+INFO  17:20:41,213 - #4 1
+INFO  17:20:41,213 - #11 ;
+INFO  17:20:41,213 - #2 i
+INFO  17:20:41,213 - #27 ++
+INFO  17:20:41,213 - #11 ;
+INFO  17:20:41,213 - #2 niz
+INFO  17:20:41,213 - #10 =
+INFO  17:20:41,213 - #31 new
+INFO  17:20:41,214 - #2 int
+INFO  17:20:41,214 - #13 [
+INFO  17:20:41,214 - #4 2
+INFO  17:20:41,214 - #14 ]
+INFO  17:20:41,214 - #11 ;
+INFO  17:20:41,214 - #2 niz
+INFO  17:20:41,214 - #13 [
+INFO  17:20:41,214 - #4 0
+INFO  17:20:41,214 - #14 ]
+INFO  17:20:41,214 - #10 =
+INFO  17:20:41,214 - #4 1
+INFO  17:20:41,214 - #11 ;
+INFO  17:20:41,214 - #2 niz
+INFO  17:20:41,214 - #13 [
+INFO  17:20:41,214 - #4 0
+INFO  17:20:41,214 - #14 ]
+INFO  17:20:41,214 - #10 =
+INFO  17:20:41,214 - #3 true
+INFO  17:20:41,214 - #11 ;
+INFO  17:20:41,214 - #2 niz
+INFO  17:20:41,214 - #10 =
+INFO  17:20:41,214 - #41 *
+INFO  17:20:41,215 - #11 ;
+INFO  17:20:41,215 - #19 if
+INFO  17:20:41,215 - #17 (
+INFO  17:20:41,215 - #2 t
+INFO  17:20:41,215 - #33 ==
+INFO  17:20:41,215 - #41 *
+INFO  17:20:41,215 - #18 )
+INFO  17:20:41,215 - #7 {
+INFO  17:20:41,215 - #8 }
+INFO  17:20:41,215 - #8 }
+INFO  17:20:41,216 - #8 }
+INFO  17:20:41,271 - Program(
+  ProgramName(
+   test302
+  ) [ProgramName]
+  DeclarationList(
+    DeclarationList(
+      DeclarationList(
+        DeclarationList(
+          DeclarationList(
+            DeclarationList(
+              DeclarationList(
+                NoDeclList(
+                ) [NoDeclList]
+                PartDeclListConst(
+                  ConstDeclMul(
+                    ConstDeclSingleNUM(
+                      Type(
+                       int
+                      ) [Type]
+                     jedan
+                     1
+                    ) [ConstDeclSingleNUM]
+                    ConstIdentDecalsNumConst(
+                      NoConstIdenDecals(
+                      ) [NoConstIdenDecals]
+                     dva
+                     2
+                    ) [ConstIdentDecalsNumConst]
+                  ) [ConstDeclMul]
+                ) [PartDeclListConst]
+              ) [DeclarationList]
+              PartDeclListVar(
+                VariableDecl(
+                  VNameAct(
+                    Type(
+                     int
+                    ) [Type]
+                   i
+                  ) [VNameAct]
+                  NoVarIdentDecls(
+                  ) [NoVarIdentDecls]
+                ) [VariableDecl]
+              ) [PartDeclListVar]
+            ) [DeclarationList]
+            PartDeclListVar(
+              VariableDecl(
+                VNameAct(
+                  Type(
+                   bool
+                  ) [Type]
+                 ibool
+                ) [VNameAct]
+                NoVarIdentDecls(
+                ) [NoVarIdentDecls]
+              ) [VariableDecl]
+            ) [PartDeclListVar]
+          ) [DeclarationList]
+          PartDeclListVar(
+            VariableDecl(
+              VNameAct(
+                Type(
+                 int
+                ) [Type]
+               niz2
+              ) [VNameAct]
+              NoVarIdentDecls(
+              ) [NoVarIdentDecls]
+            ) [VariableDecl]
+          ) [PartDeclListVar]
+        ) [DeclarationList]
+        PartDeclListVar(
+          VariableDecl(
+            VNameArr(
+              Type(
+               int
+              ) [Type]
+             niz
+            ) [VNameArr]
+            NoVarIdentDecls(
+            ) [NoVarIdentDecls]
+          ) [VariableDecl]
+        ) [PartDeclListVar]
+      ) [DeclarationList]
+      PartDeclListVar(
+        VariableDecl(
+          VNameAct(
+            Type(
+             int
+            ) [Type]
+           a
+          ) [VNameAct]
+          NoVarIdentDecls(
+          ) [NoVarIdentDecls]
+        ) [VariableDecl]
+      ) [PartDeclListVar]
+    ) [DeclarationList]
+    PartDeclListVar(
+      VarDeclDerived1(
+      ) [VarDeclDerived1]
+    ) [PartDeclListVar]
+  ) [DeclarationList]
+  MethodDeclarationList(
+    MethodDeclNoParams(
+      MStart(
+        Type(
+         int
+        ) [Type]
+       sum
+      ) [MStart]
+      OptArgsExists(
+        OptArgsMultiple(
+          SingleOptArg(
+            OptArgNUMCONST(
+              Type(
+               int
+              ) [Type]
+             z
+             1
+            ) [OptArgNUMCONST]
+          ) [SingleOptArg]
+          OptArgNUMCONST(
+            Type(
+             int
+            ) [Type]
+           d
+           2
+          ) [OptArgNUMCONST]
+        ) [OptArgsMultiple]
+      ) [OptArgsExists]
+      NoVarDeclList(
+      ) [NoVarDeclList]
+      StatementListClass(
+        NoStatementList(
+        ) [NoStatementList]
+        SingleStatementClass(
+          ReturnVarSingleStatement(
+            ExpressionMultiple(
+              ExprStart(
+                TermSingle(
+                  TermStart(
+                    FactorClass(
+                      DesignatorIdent(
+                       z
+                      ) [DesignatorIdent]
+                    ) [FactorClass]
+                  ) [TermStart]
+                ) [TermSingle]
+              ) [ExprStart]
+              AddopPLUS(
+              ) [AddopPLUS]
+              NoExprTermList(
+                TermSingle(
+                  TermStart(
+                    FactorClass(
+                      DesignatorIdent(
+                       d
+                      ) [DesignatorIdent]
+                    ) [FactorClass]
+                  ) [TermStart]
+                ) [TermSingle]
+              ) [NoExprTermList]
+            ) [ExpressionMultiple]
+          ) [ReturnVarSingleStatement]
+        ) [SingleStatementClass]
+      ) [StatementListClass]
+    ) [MethodDeclNoParams]
+    MethodDeclarationList(
+      MethodDeclNoParams(
+        MStart(
+          Type(
+           bool
+          ) [Type]
+         verify
+        ) [MStart]
+        NoOptArg(
+        ) [NoOptArg]
+        NoVarDeclList(
+        ) [NoVarDeclList]
+        StatementListClass(
+          StatementListClass(
+            NoStatementList(
+            ) [NoStatementList]
+            SingleStatementClass(
+              PrintSingleStatement(
+                ExpressionSingle(
+                  ExprStart(
+                    TermSingle(
+                      TermStart(
+                        FactorCharConst(
+                         v
+                        ) [FactorCharConst]
+                      ) [TermStart]
+                    ) [TermSingle]
+                  ) [ExprStart]
+                ) [ExpressionSingle]
+              ) [PrintSingleStatement]
+            ) [SingleStatementClass]
+          ) [StatementListClass]
+          SingleStatementClass(
+            ReturnVarSingleStatement(
+              ExpressionSingle(
+                ExprStart(
+                  TermSingle(
+                    TermStart(
+                      FactorBoolConst(
+                       false
+                      ) [FactorBoolConst]
+                    ) [TermStart]
+                  ) [TermSingle]
+                ) [ExprStart]
+              ) [ExpressionSingle]
+            ) [ReturnVarSingleStatement]
+          ) [SingleStatementClass]
+        ) [StatementListClass]
+      ) [MethodDeclNoParams]
+      MethodDeclarationList(
+        MethodDeclParams(
+          MStart(
+            Type(
+             int
+            ) [Type]
+           inkrement
+          ) [MStart]
+          NoFormParsMultiple(
+            FormParsSingleVAR(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [FormParsSingleVAR]
+          ) [NoFormParsMultiple]
+          OptArgsExistsCOMMA(
+            SingleOptArg(
+              OptArgNUMCONST(
+                Type(
+                 int
+                ) [Type]
+               inc
+               1
+              ) [OptArgNUMCONST]
+            ) [SingleOptArg]
+          ) [OptArgsExistsCOMMA]
+          VariableDeclList(
+            NoVarDeclList(
+            ) [NoVarDeclList]
+            VariableDecl(
+              VNameAct(
+                Type(
+                 int
+                ) [Type]
+               pom
+              ) [VNameAct]
+              NoVarIdentDecls(
+              ) [NoVarIdentDecls]
+            ) [VariableDecl]
+          ) [VariableDeclList]
+          StatementListClass(
+            StatementListClass(
+              NoStatementList(
+              ) [NoStatementList]
+              SingleStatementClass(
+                IfElseSingleStatement(
+                  IfIni(
+                  ) [IfIni]
+                  ConditionSingle(
+                    CondTermSingle(
+                      CondFactRelop(
+                        ExpressionSingle(
+                          ExprStart(
+                            TermSingle(
+                              TermStart(
+                                FactorClass(
+                                  DesignatorIdent(
+                                   inc
+                                  ) [DesignatorIdent]
+                                ) [FactorClass]
+                              ) [TermStart]
+                            ) [TermSingle]
+                          ) [ExprStart]
+                        ) [ExpressionSingle]
+                        RelopLEQ(
+                        ) [RelopLEQ]
+                        ExpressionSingle(
+                          ExprStart(
+                            TermSingle(
+                              TermStart(
+                                FactorClass(
+                                  DesignatorIdent(
+                                   jedan
+                                  ) [DesignatorIdent]
+                                ) [FactorClass]
+                              ) [TermStart]
+                            ) [TermSingle]
+                          ) [ExprStart]
+                        ) [ExpressionSingle]
+                      ) [CondFactRelop]
+                    ) [CondTermSingle]
+                    BracketCheck(
+                    ) [BracketCheck]
+                  ) [ConditionSingle]
+                  SingleStatementClass(
+                    DesignatorSingleStatement(
+                      DesignatorStatementAssignop(
+                        AssignOpDesignator(
+                          DesignatorIdent(
+                           pom
+                          ) [DesignatorIdent]
+                          Assignop(
+                          ) [Assignop]
+                          ExpressionSingle(
+                            ExprStart(
+                              TermSingle(
+                                TermStart(
+                                  FactorNumConst(
+                                   1
+                                  ) [FactorNumConst]
+                                ) [TermStart]
+                              ) [TermSingle]
+                            ) [ExprStart]
+                          ) [ExpressionSingle]
+                        ) [AssignOpDesignator]
+                      ) [DesignatorStatementAssignop]
+                    ) [DesignatorSingleStatement]
+                  ) [SingleStatementClass]
+                  ElseIni(
+                  ) [ElseIni]
+                  SingleStatementClass(
+                    IfSingleStatement(
+                      IfIni(
+                      ) [IfIni]
+                      ConditionSingle(
+                        CondTermSingle(
+                          CondFactRelop(
+                            ExpressionSingle(
+                              ExprStart(
+                                TermSingle(
+                                  TermStart(
+                                    FactorClass(
+                                      DesignatorIdent(
+                                       inc
+                                      ) [DesignatorIdent]
+                                    ) [FactorClass]
+                                  ) [TermStart]
+                                ) [TermSingle]
+                              ) [ExprStart]
+                            ) [ExpressionSingle]
+                            RelopLEQ(
+                            ) [RelopLEQ]
+                            ExpressionSingle(
+                              ExprStart(
+                                TermSingle(
+                                  TermStart(
+                                    FactorNumConst(
+                                     2
+                                    ) [FactorNumConst]
+                                  ) [TermStart]
+                                ) [TermSingle]
+                              ) [ExprStart]
+                            ) [ExpressionSingle]
+                          ) [CondFactRelop]
+                        ) [CondTermSingle]
+                        BracketCheck(
+                        ) [BracketCheck]
+                      ) [ConditionSingle]
+                      SingleStatementClass(
+                        DesignatorSingleStatement(
+                          DesignatorStatementAssignop(
+                            AssignOpDesignator(
+                              DesignatorIdent(
+                               pom
+                              ) [DesignatorIdent]
+                              Assignop(
+                              ) [Assignop]
+                              ExpressionSingle(
+                                ExprStart(
+                                  TermSingle(
+                                    TermStart(
+                                      FactorClass(
+                                        DesignatorIdent(
+                                         a
+                                        ) [DesignatorIdent]
+                                      ) [FactorClass]
+                                    ) [TermStart]
+                                  ) [TermSingle]
+                                ) [ExprStart]
+                              ) [ExpressionSingle]
+                            ) [AssignOpDesignator]
+                          ) [DesignatorStatementAssignop]
+                        ) [DesignatorSingleStatement]
+                      ) [SingleStatementClass]
+                    ) [IfSingleStatement]
+                  ) [SingleStatementClass]
+                ) [IfElseSingleStatement]
+              ) [SingleStatementClass]
+            ) [StatementListClass]
+            SingleStatementClass(
+              ReturnVarSingleStatement(
+                ExpressionSingle(
+                  ExprStart(
+                    TermSingle(
+                      TermStart(
+                        FactorFuncActPars(
+                          DesignatorIdent(
+                           sum
+                          ) [DesignatorIdent]
+                          ActParsMultiple(
+                            ActParsStart(
+                              ExpressionSingle(
+                                ExprStart(
+                                  TermSingle(
+                                    TermStart(
+                                      FactorClass(
+                                        DesignatorIdent(
+                                         a
+                                        ) [DesignatorIdent]
+                                      ) [FactorClass]
+                                    ) [TermStart]
+                                  ) [TermSingle]
+                                ) [ExprStart]
+                              ) [ExpressionSingle]
+                            ) [ActParsStart]
+                            NoActParsList(
+                              ExpressionSingle(
+                                ExprStart(
+                                  TermSingle(
+                                    TermStart(
+                                      FactorClass(
+                                        DesignatorIdent(
+                                         pom
+                                        ) [DesignatorIdent]
+                                      ) [FactorClass]
+                                    ) [TermStart]
+                                  ) [TermSingle]
+                                ) [ExprStart]
+                              ) [ExpressionSingle]
+                            ) [NoActParsList]
+                          ) [ActParsMultiple]
+                        ) [FactorFuncActPars]
+                      ) [TermStart]
+                    ) [TermSingle]
+                  ) [ExprStart]
+                ) [ExpressionSingle]
+              ) [ReturnVarSingleStatement]
+            ) [SingleStatementClass]
+          ) [StatementListClass]
+        ) [MethodDeclParams]
+        MethodDeclarationList(
+          MethodDeclParams(
+            MStart(
+              Type(
+               bool
+              ) [Type]
+             functBool
+            ) [MStart]
+            NoFormParsMultiple(
+              FormParsSingleVAR(
+                Type(
+                 int
+                ) [Type]
+               i
+              ) [FormParsSingleVAR]
+            ) [NoFormParsMultiple]
+            OptArgsExistsCOMMA(
+              SingleOptArg(
+                OptArgBOOLCONST(
+                  Type(
+                   bool
+                  ) [Type]
+                 t
+                 true
+                ) [OptArgBOOLCONST]
+              ) [SingleOptArg]
+            ) [OptArgsExistsCOMMA]
+            NoVarDeclList(
+            ) [NoVarDeclList]
+            StatementListClass(
+              NoStatementList(
+              ) [NoStatementList]
+              SingleStatementClass(
+                IfElseSingleStatement(
+                  IfIni(
+                  ) [IfIni]
+                  ConditionSingle(
+                    CondTermSingle(
+                      CondFactRelop(
+                        ExpressionSingle(
+                          ExprStart(
+                            TermSingle(
+                              TermStart(
+                                FactorClass(
+                                  DesignatorIdent(
+                                   i
+                                  ) [DesignatorIdent]
+                                ) [FactorClass]
+                              ) [TermStart]
+                            ) [TermSingle]
+                          ) [ExprStart]
+                        ) [ExpressionSingle]
+                        RelopLEQ(
+                        ) [RelopLEQ]
+                        ExpressionSingle(
+                          ExprStart(
+                            TermSingle(
+                              TermStart(
+                                FactorNumConst(
+                                 1
+                                ) [FactorNumConst]
+                              ) [TermStart]
+                            ) [TermSingle]
+                          ) [ExprStart]
+                        ) [ExpressionSingle]
+                      ) [CondFactRelop]
+                    ) [CondTermSingle]
+                    BracketCheck(
+                    ) [BracketCheck]
+                  ) [ConditionSingle]
+                  StatementsClass(
+                    StatementsActual(
+                      StatementListClass(
+                        NoStatementList(
+                        ) [NoStatementList]
+                        SingleStatementClass(
+                          ReturnVarSingleStatement(
+                            ExpressionSingle(
+                              ExprStart(
+                                TermSingle(
+                                  TermStart(
+                                    FactorBoolConst(
+                                     true
+                                    ) [FactorBoolConst]
+                                  ) [TermStart]
+                                ) [TermSingle]
+                              ) [ExprStart]
+                            ) [ExpressionSingle]
+                          ) [ReturnVarSingleStatement]
+                        ) [SingleStatementClass]
+                      ) [StatementListClass]
+                    ) [StatementsActual]
+                  ) [StatementsClass]
+                  ElseIni(
+                  ) [ElseIni]
+                  StatementsClass(
+                    StatementsActual(
+                      StatementListClass(
+                        NoStatementList(
+                        ) [NoStatementList]
+                        SingleStatementClass(
+                          ReturnVarSingleStatement(
+                            ExpressionSingle(
+                              ExprStart(
+                                TermSingle(
+                                  TermStart(
+                                    FactorClass(
+                                      DesignatorIdent(
+                                       t
+                                      ) [DesignatorIdent]
+                                    ) [FactorClass]
+                                  ) [TermStart]
+                                ) [TermSingle]
+                              ) [ExprStart]
+                            ) [ExpressionSingle]
+                          ) [ReturnVarSingleStatement]
+                        ) [SingleStatementClass]
+                      ) [StatementListClass]
+                    ) [StatementsActual]
+                  ) [StatementsClass]
+                ) [IfElseSingleStatement]
+              ) [SingleStatementClass]
+            ) [StatementListClass]
+          ) [MethodDeclParams]
+          MethodDeclarationList(
+            MethodDeclParams(
+              MStart(
+                Type(
+                 int
+                ) [Type]
+               add2
+              ) [MStart]
+              FormParsMultipleParams(
+                NoFormParsMultiple(
+                  FormParsSingleVAR(
+                    Type(
+                     int
+                    ) [Type]
+                   i
+                  ) [FormParsSingleVAR]
+                ) [NoFormParsMultiple]
+                FormParsSingleVAR(
+                  Type(
+                   int
+                  ) [Type]
+                 d
+                ) [FormParsSingleVAR]
+              ) [FormParsMultipleParams]
+              OptArgsExistsCOMMA(
+                SingleOptArg(
+                  OptArgNUMCONST(
+                    Type(
+                     int
+                    ) [Type]
+                   k
+                   2
+                  ) [OptArgNUMCONST]
+                ) [SingleOptArg]
+              ) [OptArgsExistsCOMMA]
+              NoVarDeclList(
+              ) [NoVarDeclList]
+              StatementListClass(
+                NoStatementList(
+                ) [NoStatementList]
+                SingleStatementClass(
+                  IfElseSingleStatement(
+                    IfIni(
+                    ) [IfIni]
+                    ConditionSingle(
+                      CondTermSingle(
+                        CondFactRelop(
+                          ExpressionSingle(
+                            ExprStart(
+                              TermSingle(
+                                TermStart(
+                                  FactorClass(
+                                    DesignatorIdent(
+                                     i
+                                    ) [DesignatorIdent]
+                                  ) [FactorClass]
+                                ) [TermStart]
+                              ) [TermSingle]
+                            ) [ExprStart]
+                          ) [ExpressionSingle]
+                          RelopLGT(
+                          ) [RelopLGT]
+                          ExpressionSingle(
+                            ExprStart(
+                              TermSingle(
+                                TermStart(
+                                  FactorNumConst(
+                                   0
+                                  ) [FactorNumConst]
+                                ) [TermStart]
+                              ) [TermSingle]
+                            ) [ExprStart]
+                          ) [ExpressionSingle]
+                        ) [CondFactRelop]
+                      ) [CondTermSingle]
+                      BracketCheck(
+                      ) [BracketCheck]
+                    ) [ConditionSingle]
+                    StatementsClass(
+                      StatementsActual(
+                        StatementListClass(
+                          NoStatementList(
+                          ) [NoStatementList]
+                          SingleStatementClass(
+                            ReturnVarSingleStatement(
+                              ExpressionMultiple(
+                                ExprStart(
+                                  TermSingle(
+                                    TermStart(
+                                      FactorClass(
+                                        DesignatorIdent(
+                                         k
+                                        ) [DesignatorIdent]
+                                      ) [FactorClass]
+                                    ) [TermStart]
+                                  ) [TermSingle]
+                                ) [ExprStart]
+                                AddopPLUS(
+                                ) [AddopPLUS]
+                                NoExprTermList(
+                                  TermSingle(
+                                    TermStart(
+                                      FactorClass(
+                                        DesignatorIdent(
+                                         i
+                                        ) [DesignatorIdent]
+                                      ) [FactorClass]
+                                    ) [TermStart]
+                                  ) [TermSingle]
+                                ) [NoExprTermList]
+                              ) [ExpressionMultiple]
+                            ) [ReturnVarSingleStatement]
+                          ) [SingleStatementClass]
+                        ) [StatementListClass]
+                      ) [StatementsActual]
+                    ) [StatementsClass]
+                    ElseIni(
+                    ) [ElseIni]
+                    StatementsClass(
+                      StatementsActual(
+                        StatementListClass(
+                          NoStatementList(
+                          ) [NoStatementList]
+                          SingleStatementClass(
+                            ReturnVarSingleStatement(
+                              ExpressionMultiple(
+                                ExprStart(
+                                  TermSingle(
+                                    TermStart(
+                                      FactorClass(
+                                        DesignatorIdent(
+                                         k
+                                        ) [DesignatorIdent]
+                                      ) [FactorClass]
+                                    ) [TermStart]
+                                  ) [TermSingle]
+                                ) [ExprStart]
+                                AddopPLUS(
+                                ) [AddopPLUS]
+                                NoExprTermList(
+                                  TermSingle(
+                                    TermStart(
+                                      FactorClass(
+                                        DesignatorIdent(
+                                         d
+                                        ) [DesignatorIdent]
+                                      ) [FactorClass]
+                                    ) [TermStart]
+                                  ) [TermSingle]
+                                ) [NoExprTermList]
+                              ) [ExpressionMultiple]
+                            ) [ReturnVarSingleStatement]
+                          ) [SingleStatementClass]
+                        ) [StatementListClass]
+                      ) [StatementsActual]
+                    ) [StatementsClass]
+                  ) [IfElseSingleStatement]
+                ) [SingleStatementClass]
+              ) [StatementListClass]
+            ) [MethodDeclParams]
+            MethodDeclarationList(
+              MethodDeclParams(
+                MStart(
+                  Type(
+                   int
+                  ) [Type]
+                 temp3
+                ) [MStart]
+                FormParsMultipleParams(
+                  FormParsMultipleDerived1(
+                  ) [FormParsMultipleDerived1]
+                  FormParsSingleVAR(
+                    Type(
+                     int
+                    ) [Type]
+                   d
+                  ) [FormParsSingleVAR]
+                ) [FormParsMultipleParams]
+                NoOptArg(
+                ) [NoOptArg]
+                NoVarDeclList(
+                ) [NoVarDeclList]
+                StatementListClass(
+                  NoStatementList(
+                  ) [NoStatementList]
+                  SingleStatementClass(
+                    ReturnVarSingleStatement(
+                      ExpressionSingle(
+                        ExprStart(
+                          TermSingle(
+                            TermStart(
+                              FactorNumConst(
+                               1
+                              ) [FactorNumConst]
+                            ) [TermStart]
+                          ) [TermSingle]
+                        ) [ExprStart]
+                      ) [ExpressionSingle]
+                    ) [ReturnVarSingleStatement]
+                  ) [SingleStatementClass]
+                ) [StatementListClass]
+              ) [MethodDeclParams]
+              MethodDeclarationList(
+                MethodDeclVoidNoParams(
+                  MStartVoid(
+                   main
+                  ) [MStartVoid]
+                  NoOptArg(
+                  ) [NoOptArg]
+                  NoVarDeclList(
+                  ) [NoVarDeclList]
+                  StatementListClass(
+                    StatementListClass(
+                      StatementListClass(
+                        StatementListClass(
+                          StatementListClass(
+                            StatementListClass(
+                              StatementListClass(
+                                StatementListClass(
+                                  StatementListClass(
+                                    StatementListClass(
+                                      StatementListClass(
+                                        StatementListClass(
+                                          NoStatementList(
+                                          ) [NoStatementList]
+                                          SingleStatementClass(
+                                            IfSingleStatement(
+                                              IfIni(
+                                              ) [IfIni]
+                                              ConditionSingle(
+                                                CondTermSingle(
+                                                  ConditionFact(
+                                                    ExpressionSingle(
+                                                      ExprStart(
+                                                        TermSingle(
+                                                          TermStart(
+                                                            FactorFuncActPars(
+                                                              DesignatorIdent(
+                                                               functBool
+                                                              ) [DesignatorIdent]
+                                                              ActParsSingle(
+                                                                ActParsStart(
+                                                                  ExpressionSingle(
+                                                                    ExprStart(
+                                                                      TermSingle(
+                                                                        TermStart(
+                                                                          FactorClass(
+                                                                            DesignatorIdent(
+                                                                             jedan
+                                                                            ) [DesignatorIdent]
+                                                                          ) [FactorClass]
+                                                                        ) [TermStart]
+                                                                      ) [TermSingle]
+                                                                    ) [ExprStart]
+                                                                  ) [ExpressionSingle]
+                                                                ) [ActParsStart]
+                                                              ) [ActParsSingle]
+                                                            ) [FactorFuncActPars]
+                                                          ) [TermStart]
+                                                        ) [TermSingle]
+                                                      ) [ExprStart]
+                                                    ) [ExpressionSingle]
+                                                  ) [ConditionFact]
+                                                ) [CondTermSingle]
+                                                BracketCheck(
+                                                ) [BracketCheck]
+                                              ) [ConditionSingle]
+                                              StatementsClass(
+                                                StatementsActual(
+                                                  StatementListClass(
+                                                    StatementListClass(
+                                                      StatementListClass(
+                                                        NoStatementList(
+                                                        ) [NoStatementList]
+                                                        SingleStatementClass(
+                                                          PrintSingleStatement(
+                                                            ExpressionSingle(
+                                                              ExprStart(
+                                                                TermSingle(
+                                                                  TermStart(
+                                                                    FactorCharConst(
+                                                                     p
+                                                                    ) [FactorCharConst]
+                                                                  ) [TermStart]
+                                                                ) [TermSingle]
+                                                              ) [ExprStart]
+                                                            ) [ExpressionSingle]
+                                                          ) [PrintSingleStatement]
+                                                        ) [SingleStatementClass]
+                                                      ) [StatementListClass]
+                                                      SingleStatementClass(
+                                                        PrintSingleStatement(
+                                                          ExpressionSingle(
+                                                            ExprStart(
+                                                              TermSingle(
+                                                                TermStart(
+                                                                  FactorCharConst(
+                                                                   1
+                                                                  ) [FactorCharConst]
+                                                                ) [TermStart]
+                                                              ) [TermSingle]
+                                                            ) [ExprStart]
+                                                          ) [ExpressionSingle]
+                                                        ) [PrintSingleStatement]
+                                                      ) [SingleStatementClass]
+                                                    ) [StatementListClass]
+                                                    SingleStatementClass(
+                                                      PrintSingleStatement(
+                                                        ExpressionSingle(
+                                                          ExprStart(
+                                                            TermSingle(
+                                                              TermStart(
+                                                                FactorClass(
+                                                                  DesignatorIdent(
+                                                                   eol
+                                                                  ) [DesignatorIdent]
+                                                                ) [FactorClass]
+                                                              ) [TermStart]
+                                                            ) [TermSingle]
+                                                          ) [ExprStart]
+                                                        ) [ExpressionSingle]
+                                                      ) [PrintSingleStatement]
+                                                    ) [SingleStatementClass]
+                                                  ) [StatementListClass]
+                                                ) [StatementsActual]
+                                              ) [StatementsClass]
+                                            ) [IfSingleStatement]
+                                          ) [SingleStatementClass]
+                                        ) [StatementListClass]
+                                        SingleStatementClass(
+                                          IfSingleStatement(
+                                            IfIni(
+                                            ) [IfIni]
+                                            ConditionSingle(
+                                              CondTermSingle(
+                                                CondFactRelop(
+                                                  ExpressionSingle(
+                                                    ExprStart(
+                                                      TermSingle(
+                                                        TermStart(
+                                                          FactorFuncActPars(
+                                                            DesignatorIdent(
+                                                             functBool
+                                                            ) [DesignatorIdent]
+                                                            ActParsSingle(
+                                                              ActParsStart(
+                                                                ExpressionSingle(
+                                                                  ExprStart(
+                                                                    TermSingle(
+                                                                      TermStart(
+                                                                        FactorClass(
+                                                                          DesignatorIdent(
+                                                                           dva
+                                                                          ) [DesignatorIdent]
+                                                                        ) [FactorClass]
+                                                                      ) [TermStart]
+                                                                    ) [TermSingle]
+                                                                  ) [ExprStart]
+                                                                ) [ExpressionSingle]
+                                                              ) [ActParsStart]
+                                                            ) [ActParsSingle]
+                                                          ) [FactorFuncActPars]
+                                                        ) [TermStart]
+                                                      ) [TermSingle]
+                                                    ) [ExprStart]
+                                                  ) [ExpressionSingle]
+                                                  RelopLEQ(
+                                                  ) [RelopLEQ]
+                                                  ExpressionSingle(
+                                                    ExprStart(
+                                                      TermSingle(
+                                                        TermStart(
+                                                          FactorBoolConst(
+                                                           true
+                                                          ) [FactorBoolConst]
+                                                        ) [TermStart]
+                                                      ) [TermSingle]
+                                                    ) [ExprStart]
+                                                  ) [ExpressionSingle]
+                                                ) [CondFactRelop]
+                                              ) [CondTermSingle]
+                                              BracketCheck(
+                                              ) [BracketCheck]
+                                            ) [ConditionSingle]
+                                            StatementsClass(
+                                              StatementsActual(
+                                                StatementListClass(
+                                                  StatementListClass(
+                                                    StatementListClass(
+                                                      NoStatementList(
+                                                      ) [NoStatementList]
+                                                      SingleStatementClass(
+                                                        PrintSingleStatement(
+                                                          ExpressionSingle(
+                                                            ExprStart(
+                                                              TermSingle(
+                                                                TermStart(
+                                                                  FactorCharConst(
+                                                                   p
+                                                                  ) [FactorCharConst]
+                                                                ) [TermStart]
+                                                              ) [TermSingle]
+                                                            ) [ExprStart]
+                                                          ) [ExpressionSingle]
+                                                        ) [PrintSingleStatement]
+                                                      ) [SingleStatementClass]
+                                                    ) [StatementListClass]
+                                                    SingleStatementClass(
+                                                      PrintSingleStatement(
+                                                        ExpressionSingle(
+                                                          ExprStart(
+                                                            TermSingle(
+                                                              TermStart(
+                                                                FactorCharConst(
+                                                                 2
+                                                                ) [FactorCharConst]
+                                                              ) [TermStart]
+                                                            ) [TermSingle]
+                                                          ) [ExprStart]
+                                                        ) [ExpressionSingle]
+                                                      ) [PrintSingleStatement]
+                                                    ) [SingleStatementClass]
+                                                  ) [StatementListClass]
+                                                  SingleStatementClass(
+                                                    PrintSingleStatement(
+                                                      ExpressionSingle(
+                                                        ExprStart(
+                                                          TermSingle(
+                                                            TermStart(
+                                                              FactorClass(
+                                                                DesignatorIdent(
+                                                                 eol
+                                                                ) [DesignatorIdent]
+                                                              ) [FactorClass]
+                                                            ) [TermStart]
+                                                          ) [TermSingle]
+                                                        ) [ExprStart]
+                                                      ) [ExpressionSingle]
+                                                    ) [PrintSingleStatement]
+                                                  ) [SingleStatementClass]
+                                                ) [StatementListClass]
+                                              ) [StatementsActual]
+                                            ) [StatementsClass]
+                                          ) [IfSingleStatement]
+                                        ) [SingleStatementClass]
+                                      ) [StatementListClass]
+                                      SingleStatementClass(
+                                        IfSingleStatement(
+                                          IfIni(
+                                          ) [IfIni]
+                                          ConditionSingle(
+                                            CondTermSingle(
+                                              CondFactRelop(
+                                                ExpressionSingle(
+                                                  ExprStart(
+                                                    TermSingle(
+                                                      TermStart(
+                                                        FactorFuncActPars(
+                                                          DesignatorIdent(
+                                                           functBool
+                                                          ) [DesignatorIdent]
+                                                          ActParsMultiple(
+                                                            ActParsStart(
+                                                              ExpressionSingle(
+                                                                ExprStart(
+                                                                  TermSingle(
+                                                                    TermStart(
+                                                                      FactorClass(
+                                                                        DesignatorIdent(
+                                                                         dva
+                                                                        ) [DesignatorIdent]
+                                                                      ) [FactorClass]
+                                                                    ) [TermStart]
+                                                                  ) [TermSingle]
+                                                                ) [ExprStart]
+                                                              ) [ExpressionSingle]
+                                                            ) [ActParsStart]
+                                                            NoActParsList(
+                                                              ExpressionSingle(
+                                                                ExprStart(
+                                                                  TermSingle(
+                                                                    TermStart(
+                                                                      FactorFuncActPars(
+                                                                        DesignatorIdent(
+                                                                         functBool
+                                                                        ) [DesignatorIdent]
+                                                                        ActParsSingle(
+                                                                          ActParsStart(
+                                                                            ExpressionSingle(
+                                                                              ExprStart(
+                                                                                TermSingle(
+                                                                                  TermStart(
+                                                                                    FactorNumConst(
+                                                                                     1
+                                                                                    ) [FactorNumConst]
+                                                                                  ) [TermStart]
+                                                                                ) [TermSingle]
+                                                                              ) [ExprStart]
+                                                                            ) [ExpressionSingle]
+                                                                          ) [ActParsStart]
+                                                                        ) [ActParsSingle]
+                                                                      ) [FactorFuncActPars]
+                                                                    ) [TermStart]
+                                                                  ) [TermSingle]
+                                                                ) [ExprStart]
+                                                              ) [ExpressionSingle]
+                                                            ) [NoActParsList]
+                                                          ) [ActParsMultiple]
+                                                        ) [FactorFuncActPars]
+                                                      ) [TermStart]
+                                                    ) [TermSingle]
+                                                  ) [ExprStart]
+                                                ) [ExpressionSingle]
+                                                RelopLEQ(
+                                                ) [RelopLEQ]
+                                                ExpressionSingle(
+                                                  ExprStart(
+                                                    TermSingle(
+                                                      TermStart(
+                                                        FactorBoolConst(
+                                                         true
+                                                        ) [FactorBoolConst]
+                                                      ) [TermStart]
+                                                    ) [TermSingle]
+                                                  ) [ExprStart]
+                                                ) [ExpressionSingle]
+                                              ) [CondFactRelop]
+                                            ) [CondTermSingle]
+                                            BracketCheck(
+                                            ) [BracketCheck]
+                                          ) [ConditionSingle]
+                                          StatementsClass(
+                                            StatementsActual(
+                                              StatementListClass(
+                                                StatementListClass(
+                                                  StatementListClass(
+                                                    NoStatementList(
+                                                    ) [NoStatementList]
+                                                    SingleStatementClass(
+                                                      PrintSingleStatement(
+                                                        ExpressionSingle(
+                                                          ExprStart(
+                                                            TermSingle(
+                                                              TermStart(
+                                                                FactorCharConst(
+                                                                 p
+                                                                ) [FactorCharConst]
+                                                              ) [TermStart]
+                                                            ) [TermSingle]
+                                                          ) [ExprStart]
+                                                        ) [ExpressionSingle]
+                                                      ) [PrintSingleStatement]
+                                                    ) [SingleStatementClass]
+                                                  ) [StatementListClass]
+                                                  SingleStatementClass(
+                                                    PrintSingleStatement(
+                                                      ExpressionSingle(
+                                                        ExprStart(
+                                                          TermSingle(
+                                                            TermStart(
+                                                              FactorCharConst(
+                                                               3
+                                                              ) [FactorCharConst]
+                                                            ) [TermStart]
+                                                          ) [TermSingle]
+                                                        ) [ExprStart]
+                                                      ) [ExpressionSingle]
+                                                    ) [PrintSingleStatement]
+                                                  ) [SingleStatementClass]
+                                                ) [StatementListClass]
+                                                SingleStatementClass(
+                                                  PrintSingleStatement(
+                                                    ExpressionSingle(
+                                                      ExprStart(
+                                                        TermSingle(
+                                                          TermStart(
+                                                            FactorClass(
+                                                              DesignatorIdent(
+                                                               eol
+                                                              ) [DesignatorIdent]
+                                                            ) [FactorClass]
+                                                          ) [TermStart]
+                                                        ) [TermSingle]
+                                                      ) [ExprStart]
+                                                    ) [ExpressionSingle]
+                                                  ) [PrintSingleStatement]
+                                                ) [SingleStatementClass]
+                                              ) [StatementListClass]
+                                            ) [StatementsActual]
+                                          ) [StatementsClass]
+                                        ) [IfSingleStatement]
+                                      ) [SingleStatementClass]
+                                    ) [StatementListClass]
+                                    SingleStatementClass(
+                                      IfSingleStatement(
+                                        IfIni(
+                                        ) [IfIni]
+                                        ConditionSingle(
+                                          CondTermSingle(
+                                            CondFactRelop(
+                                              ExpressionSingle(
+                                                ExprStart(
+                                                  TermSingle(
+                                                    TermStart(
+                                                      FactorFuncActPars(
+                                                        DesignatorIdent(
+                                                         add2
+                                                        ) [DesignatorIdent]
+                                                        ActParsMultiple(
+                                                          ActParsStart(
+                                                            ExpressionSingle(
+                                                              ExprStart(
+                                                                TermSingle(
+                                                                  TermStart(
+                                                                    FactorNumConst(
+                                                                     1
+                                                                    ) [FactorNumConst]
+                                                                  ) [TermStart]
+                                                                ) [TermSingle]
+                                                              ) [ExprStart]
+                                                            ) [ExpressionSingle]
+                                                          ) [ActParsStart]
+                                                          NoActParsList(
+                                                            ExpressionSingle(
+                                                              ExprStart(
+                                                                TermSingle(
+                                                                  TermStart(
+                                                                    FactorNumConst(
+                                                                     2
+                                                                    ) [FactorNumConst]
+                                                                  ) [TermStart]
+                                                                ) [TermSingle]
+                                                              ) [ExprStart]
+                                                            ) [ExpressionSingle]
+                                                          ) [NoActParsList]
+                                                        ) [ActParsMultiple]
+                                                      ) [FactorFuncActPars]
+                                                    ) [TermStart]
+                                                  ) [TermSingle]
+                                                ) [ExprStart]
+                                              ) [ExpressionSingle]
+                                              RelopLGT(
+                                              ) [RelopLGT]
+                                              ExpressionSingle(
+                                                ExprStart(
+                                                  TermSingle(
+                                                    TermStart(
+                                                      FactorNumConst(
+                                                       3
+                                                      ) [FactorNumConst]
+                                                    ) [TermStart]
+                                                  ) [TermSingle]
+                                                ) [ExprStart]
+                                              ) [ExpressionSingle]
+                                            ) [CondFactRelop]
+                                          ) [CondTermSingle]
+                                          BracketCheck(
+                                          ) [BracketCheck]
+                                        ) [ConditionSingle]
+                                        StatementsClass(
+                                          StatementsActual(
+                                            StatementListClass(
+                                              StatementListClass(
+                                                StatementListClass(
+                                                  NoStatementList(
+                                                  ) [NoStatementList]
+                                                  SingleStatementClass(
+                                                    PrintSingleStatement(
+                                                      ExpressionSingle(
+                                                        ExprStart(
+                                                          TermSingle(
+                                                            TermStart(
+                                                              FactorCharConst(
+                                                               p
+                                                              ) [FactorCharConst]
+                                                            ) [TermStart]
+                                                          ) [TermSingle]
+                                                        ) [ExprStart]
+                                                      ) [ExpressionSingle]
+                                                    ) [PrintSingleStatement]
+                                                  ) [SingleStatementClass]
+                                                ) [StatementListClass]
+                                                SingleStatementClass(
+                                                  PrintSingleStatement(
+                                                    ExpressionSingle(
+                                                      ExprStart(
+                                                        TermSingle(
+                                                          TermStart(
+                                                            FactorCharConst(
+                                                             4
+                                                            ) [FactorCharConst]
+                                                          ) [TermStart]
+                                                        ) [TermSingle]
+                                                      ) [ExprStart]
+                                                    ) [ExpressionSingle]
+                                                  ) [PrintSingleStatement]
+                                                ) [SingleStatementClass]
+                                              ) [StatementListClass]
+                                              SingleStatementClass(
+                                                PrintSingleStatement(
+                                                  ExpressionSingle(
+                                                    ExprStart(
+                                                      TermSingle(
+                                                        TermStart(
+                                                          FactorClass(
+                                                            DesignatorIdent(
+                                                             eol
+                                                            ) [DesignatorIdent]
+                                                          ) [FactorClass]
+                                                        ) [TermStart]
+                                                      ) [TermSingle]
+                                                    ) [ExprStart]
+                                                  ) [ExpressionSingle]
+                                                ) [PrintSingleStatement]
+                                              ) [SingleStatementClass]
+                                            ) [StatementListClass]
+                                          ) [StatementsActual]
+                                        ) [StatementsClass]
+                                      ) [IfSingleStatement]
+                                    ) [SingleStatementClass]
+                                  ) [StatementListClass]
+                                  SingleStatementClass(
+                                    PrintArgsSingleStatement(
+                                      ExpressionSingle(
+                                        ExprStart(
+                                          TermSingle(
+                                            TermStart(
+                                              FactorCharConst(
+                                               d
+                                              ) [FactorCharConst]
+                                            ) [TermStart]
+                                          ) [TermSingle]
+                                        ) [ExprStart]
+                                      ) [ExpressionSingle]
+                                     2
+                                    ) [PrintArgsSingleStatement]
+                                  ) [SingleStatementClass]
+                                ) [StatementListClass]
+                                SingleStatementClass(
+                                  DesignatorSingleStatement(
+                                    DesignatorStatementAssignop(
+                                      AssignOpDesignator(
+                                        DesignatorIdent(
+                                         i
+                                        ) [DesignatorIdent]
+                                        Assignop(
+                                        ) [Assignop]
+                                        ExpressionSingle(
+                                          ExprStart(
+                                            TermSingle(
+                                              TermStart(
+                                                FactorNumConst(
+                                                 1
+                                                ) [FactorNumConst]
+                                              ) [TermStart]
+                                            ) [TermSingle]
+                                          ) [ExprStart]
+                                        ) [ExpressionSingle]
+                                      ) [AssignOpDesignator]
+                                    ) [DesignatorStatementAssignop]
+                                  ) [DesignatorSingleStatement]
+                                ) [SingleStatementClass]
+                              ) [StatementListClass]
+                              SingleStatementClass(
+                                DesignatorSingleStatement(
+                                  DesignatorStatementInc(
+                                    DesignatorIdent(
+                                     i
+                                    ) [DesignatorIdent]
+                                  ) [DesignatorStatementInc]
+                                ) [DesignatorSingleStatement]
+                              ) [SingleStatementClass]
+                            ) [StatementListClass]
+                            SingleStatementClass(
+                              DesignatorSingleStatement(
+                                DesignatorStatementAssignop(
+                                  AssignOpDesignator(
+                                    DesignatorIdent(
+                                     niz
+                                    ) [DesignatorIdent]
+                                    Assignop(
+                                    ) [Assignop]
+                                    ExpressionSingle(
+                                      ExprStart(
+                                        TermSingle(
+                                          TermStart(
+                                            FactorNewArr(
+                                              Type(
+                                               int
+                                              ) [Type]
+                                              ExpressionSingle(
+                                                ExprStart(
+                                                  TermSingle(
+                                                    TermStart(
+                                                      FactorNumConst(
+                                                       2
+                                                      ) [FactorNumConst]
+                                                    ) [TermStart]
+                                                  ) [TermSingle]
+                                                ) [ExprStart]
+                                              ) [ExpressionSingle]
+                                            ) [FactorNewArr]
+                                          ) [TermStart]
+                                        ) [TermSingle]
+                                      ) [ExprStart]
+                                    ) [ExpressionSingle]
+                                  ) [AssignOpDesignator]
+                                ) [DesignatorStatementAssignop]
+                              ) [DesignatorSingleStatement]
+                            ) [SingleStatementClass]
+                          ) [StatementListClass]
+                          SingleStatementClass(
+                            DesignatorSingleStatement(
+                              DesignatorStatementAssignop(
+                                AssignOpDesignator(
+                                  DesignatorArr(
+                                    DesignatorIdent(
+                                     niz
+                                    ) [DesignatorIdent]
+                                    ExpressionSingle(
+                                      ExprStart(
+                                        TermSingle(
+                                          TermStart(
+                                            FactorNumConst(
+                                             0
+                                            ) [FactorNumConst]
+                                          ) [TermStart]
+                                        ) [TermSingle]
+                                      ) [ExprStart]
+                                    ) [ExpressionSingle]
+                                  ) [DesignatorArr]
+                                  Assignop(
+                                  ) [Assignop]
+                                  ExpressionSingle(
+                                    ExprStart(
+                                      TermSingle(
+                                        TermStart(
+                                          FactorNumConst(
+                                           1
+                                          ) [FactorNumConst]
+                                        ) [TermStart]
+                                      ) [TermSingle]
+                                    ) [ExprStart]
+                                  ) [ExpressionSingle]
+                                ) [AssignOpDesignator]
+                              ) [DesignatorStatementAssignop]
+                            ) [DesignatorSingleStatement]
+                          ) [SingleStatementClass]
+                        ) [StatementListClass]
+                        SingleStatementClass(
+                          DesignatorSingleStatement(
+                            DesignatorStatementAssignop(
+                              AssignOpDesignator(
+                                DesignatorArr(
+                                  DesignatorIdent(
+                                   niz
+                                  ) [DesignatorIdent]
+                                  ExpressionSingle(
+                                    ExprStart(
+                                      TermSingle(
+                                        TermStart(
+                                          FactorNumConst(
+                                           0
+                                          ) [FactorNumConst]
+                                        ) [TermStart]
+                                      ) [TermSingle]
+                                    ) [ExprStart]
+                                  ) [ExpressionSingle]
+                                ) [DesignatorArr]
+                                Assignop(
+                                ) [Assignop]
+                                ExpressionSingle(
+                                  ExprStart(
+                                    TermSingle(
+                                      TermStart(
+                                        FactorBoolConst(
+                                         true
+                                        ) [FactorBoolConst]
+                                      ) [TermStart]
+                                    ) [TermSingle]
+                                  ) [ExprStart]
+                                ) [ExpressionSingle]
+                              ) [AssignOpDesignator]
+                            ) [DesignatorStatementAssignop]
+                          ) [DesignatorSingleStatement]
+                        ) [SingleStatementClass]
+                      ) [StatementListClass]
+                      SingleStatementClass(
+                        DesignatorSingleStatement(
+                          DesignatorStatementAssignop(
+                            DesignatorAssignOpDerived1(
+                            ) [DesignatorAssignOpDerived1]
+                          ) [DesignatorStatementAssignop]
+                        ) [DesignatorSingleStatement]
+                      ) [SingleStatementClass]
+                    ) [StatementListClass]
+                    SingleStatementClass(
+                      IfSingleStatement(
+                        IfIni(
+                        ) [IfIni]
+                        ConditionError(
+                        ) [ConditionError]
+                        StatementsClass(
+                          StatementsActual(
+                            NoStatementList(
+                            ) [NoStatementList]
+                          ) [StatementsActual]
+                        ) [StatementsClass]
+                      ) [IfSingleStatement]
+                    ) [SingleStatementClass]
+                  ) [StatementListClass]
+                ) [MethodDeclVoidNoParams]
+                NoMethodDeclList(
+                ) [NoMethodDeclList]
+              ) [MethodDeclarationList]
+            ) [MethodDeclarationList]
+          ) [MethodDeclarationList]
+        ) [MethodDeclarationList]
+      ) [MethodDeclarationList]
+    ) [MethodDeclarationList]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  17:20:41,274 - ===================================
+INFO  17:20:41,281 - Pristup lokalnoj promenjivi  na liniji 22
+INFO  17:20:41,283 - 	 Var z: int, 0, 1 
+INFO  17:20:41,283 - Pristup lokalnoj promenjivi  na liniji 22
+INFO  17:20:41,283 - 	 Var d: int, 1, 1 
+INFO  17:20:41,283 - Pristup lokalnoj promenjivi  na liniji 33
+INFO  17:20:41,283 - 	 Var inc: int, 1, 1 
+INFO  17:20:41,283 - Pristup lokalnoj promenjivi  na liniji 33
+INFO  17:20:41,283 - 	 Var pom: int, 2, 1 
+INFO  17:20:41,283 - Pristup lokalnoj promenjivi  na liniji 34
+INFO  17:20:41,283 - 	 Var inc: int, 1, 1 
+INFO  17:20:41,283 - Pristup lokalnoj promenjivi  na liniji 34
+INFO  17:20:41,284 - 	 Var pom: int, 2, 1 
+INFO  17:20:41,284 - Pristup formalnom parametru  na liniji 34
+INFO  17:20:41,284 - 	 Var a: int, 0, 1 
+INFO  17:20:41,284 - Pristup formalnom parametru  na liniji 36
+INFO  17:20:41,284 - 	 Var a: int, 0, 1 
+INFO  17:20:41,284 - Pristup lokalnoj promenjivi  na liniji 36
+INFO  17:20:41,284 - 	 Var pom: int, 2, 1 
+INFO  17:20:41,284 - Poziv globalne funkcije  na liniji 36
+INFO  17:20:41,284 - 	 Meth sum: int, 0, 0 
+   Var z: int, 0, 1 
+   Var d: int, 1, 1 
+
+INFO  17:20:41,284 - Pristup formalnom parametru  na liniji 42
+INFO  17:20:41,284 - 	 Var i: int, 0, 1 
+INFO  17:20:41,284 - Pristup lokalnoj promenjivi  na liniji 46
+INFO  17:20:41,284 - 	 Var t: bool, 1, 1 
+INFO  17:20:41,285 - Pristup formalnom parametru  na liniji 52
+INFO  17:20:41,285 - 	 Var i: int, 0, 1 
+INFO  17:20:41,285 - Pristup lokalnoj promenjivi  na liniji 53
+INFO  17:20:41,285 - 	 Var k: int, 2, 1 
+INFO  17:20:41,285 - Pristup formalnom parametru  na liniji 53
+INFO  17:20:41,285 - 	 Var i: int, 0, 1 
+INFO  17:20:41,285 - Pristup lokalnoj promenjivi  na liniji 56
+INFO  17:20:41,285 - 	 Var k: int, 2, 1 
+INFO  17:20:41,285 - Pristup formalnom parametru  na liniji 56
+INFO  17:20:41,285 - 	 Var d: int, 1, 1 
+INFO  17:20:41,285 - Poziv globalne funkcije  na liniji 66
+INFO  17:20:41,285 - 	 Meth functBool: bool, 0, 1 
+   Var i: int, 0, 1 
+   Var t: bool, 1, 1 
+
+INFO  17:20:41,285 - Poziv globalne funkcije  na liniji 72
+INFO  17:20:41,285 - 	 Meth functBool: bool, 0, 1 
+   Var i: int, 0, 1 
+   Var t: bool, 1, 1 
+
+INFO  17:20:41,285 - Poziv globalne funkcije  na liniji 78
+INFO  17:20:41,285 - 	 Meth functBool: bool, 0, 1 
+   Var i: int, 0, 1 
+   Var t: bool, 1, 1 
+
+INFO  17:20:41,285 - Poziv globalne funkcije  na liniji 78
+INFO  17:20:41,285 - 	 Meth functBool: bool, 0, 1 
+   Var i: int, 0, 1 
+   Var t: bool, 1, 1 
+
+INFO  17:20:41,285 - Poziv globalne funkcije  na liniji 84
+INFO  17:20:41,286 - 	 Meth add2: int, 0, 2 
+   Var i: int, 0, 1 
+   Var d: int, 1, 1 
+   Var k: int, 2, 1 
+
+INFO  17:20:41,286 - Pristup globalnoj promenjivi  na liniji 92
+INFO  17:20:41,286 - 	 Var i: int, 0, 0 
+INFO  17:20:41,286 - Pristup globalnoj promenjivi  na liniji 93
+INFO  17:20:41,286 - 	 Var i: int, 0, 0 
+INFO  17:20:41,286 - Pristup globalnoj promenjivi  na liniji 95
+INFO  17:20:41,286 - 	 Var niz: Arr of int, 3, 0 
+INFO  17:20:41,286 - Pristup globalnoj promenjivi  na liniji 96
+INFO  17:20:41,286 - 	 Var niz: Arr of int, 3, 0 
+INFO  17:20:41,286 - Pristup elementu niza na liniji 96
+INFO  17:20:41,286 - 	 Var niz: Arr of int, 3, 0 
+INFO  17:20:41,286 - Pristup globalnoj promenjivi  na liniji 98
+INFO  17:20:41,286 - 	 Var niz: Arr of int, 3, 0 
+INFO  17:20:41,286 - Pristup elementu niza na liniji 98
+INFO  17:20:41,286 - 	 Var niz: Arr of int, 3, 0 

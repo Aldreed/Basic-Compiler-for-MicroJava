@@ -1,0 +1,14 @@
+ERROR 17:20:41,178 - 
+Sintaksna greska na liniji 16
+ERROR 17:20:41,180 - Izvrsen oporavak do ; u liniji 16
+ERROR 17:20:41,198 - 
+Sintaksna greska na liniji 60
+ERROR 17:20:41,199 - FORM PARS Greska u deklarisanju formalnog parametra na liniji: 60
+ERROR 17:20:41,214 - 
+Sintaksna greska na liniji 100
+ERROR 17:20:41,215 - ASSIGN Izvrsen oporavak do ; u liniji 100
+ERROR 17:20:41,215 - 
+Sintaksna greska na liniji 102
+ERROR 17:20:41,216 - IF Izvrsen oporavak do ) u liniji 102
+ERROR 17:20:41,286 - Tipovi nisu kompatibilni  na liniji 98
+ERROR 17:20:41,286 - Uslov u if mora biti tipa bool  na liniji 102
